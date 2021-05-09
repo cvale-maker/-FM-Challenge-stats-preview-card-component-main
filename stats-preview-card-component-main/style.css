@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif ;
+    font-size: 15px ;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+main {
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    width: 60% ;
+    height: 50%;
+    margin-top: 10%;
+    margin-left: 20%;
+    border-radius: 8px;
+}
+h1, h2 {
+    color: hsl(0, 0%, 100%);
+}
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+img {
+    opacity: 0.5;
+}
+.hero-image {
+    background-color: hsl(277, 64%, 61%);
+}
+.item1 { grid-area: main-title ;}
+.item2 { grid-area: main-p ;}
+.item3 { grid-area: stat-1 ;}
+.item4 { grid-area: stat-2 ;}
+.item5 { grid-area: stat-3 ;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'main-title main-title main-title'
+    'main-p main-p main-p'
+    'stat-1 stat-2 stat-3' ;
+    grid-gap: 5px;
+    padding: 80px;   
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
